@@ -11,10 +11,14 @@ A file to document specific ideas and concerns regarding rules, pertinently thos
 
 
 ## Consensus / Discussion Needed
+- Generative AI
+  - (Local) I think we should ban any asset creation with generative AI. There should be no need to add assets anyhow, but if we have "slots" open for art, sound fx, or music then I think it should be hand made
 
 - 3D Meshes - Permitted usage:
     - Should meshes be limited to primitive shapes?
     - For example is it limited to planes, cubes and other similar shapes, or can more complex meshes be used as long as the provided art is used to texture them?
+      - (Local) If we allow it we should have a very limited number of custom shapes one can add
+      - (Local) I think it might be fine to add at least a cube primitive as an allowed 3D art. Maybe some other primitive too like sphere and pyramid? 
 
 - Particle systems:
     - Are particle systems allowed, provided that emmiters only use spirtes / billboards of the given art assets?
@@ -36,6 +40,9 @@ A file to document specific ideas and concerns regarding rules, pertinently thos
     - (Local) I think it should be allowed to reinterpret what is transparent in the asset at will (though stil on color basis of the original texture)
     - (Local) I think it should be allowed to tile or otherwise use more than one texture per wall/floor/ceiling to mosaically build up a more complex image
 
+- Voice
+  - (Local) I think we should be allowed some or even as many as we want voice lines into the game as it sort of equates adding text. And I don't think we want to limit text do we?
+   
 ## Possible loopholes
 
 - Sprite destruction and reassembly:
