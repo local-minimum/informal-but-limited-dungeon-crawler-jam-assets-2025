@@ -18,9 +18,11 @@ A file to document specific ideas and concerns regarding rules, pertinently thos
 
 - Particle systems:
     - Are particle systems allowed, provided that emmiters only use spirtes / billboards of the given art assets?
+        - (Jimbly) I say yes
 
 - Procedural Generation:
-    - (Slippers) I vote that we ban any and all procedurally generated colour / audio. 
+    - (Slippers) I vote that we ban any and all procedurally generated colour / audio.
+        - (Jimbly) Arguably, that's what "lighting" is in engines - anything that feels like post-processing/lighting/visual effects I'd say is a fine way to use the assets, generating something as a replacement/alternative to a source asset seems not fine.
     - I am more open to the use of edge detection filters to generate normal maps if participants should want to:
         - Notch is making a crawler with those techniques which might serve as inspiration for this usecase
 
@@ -28,12 +30,13 @@ A file to document specific ideas and concerns regarding rules, pertinently thos
 
 - Art assets should remain structurally sound:
     - Adjustments can be made via shaders to colour, brightness etc, but must be made across the entire texture uniformly. i.e. the same shader must be run across each fragment.
+    - (Jimbly) I'd want to allow reasonable cutting, especially for technical reasons.  E.g. cutting a wall + door texture into 2 to animate it, or use one style door with a different style frame, and similar - this overlaps with what shape of meshes you're allowed to put these textures on
 
 
 ## Possible loopholes
 
 - Sprite destruction and reassembly:
-    - fracturing down into sections and rearranging back into a new 12x12 sprite
+    - fracturing down into sections and rearranging back into a new 12x12 sprite (if it's not recognizeable as from the original asset pack, it's a clear violation of the spirit of the rules)
 
 - Not using any of the provided assets and building a game some other way:
     - line renderer
