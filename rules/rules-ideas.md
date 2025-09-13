@@ -36,6 +36,7 @@ A file to document specific ideas and concerns regarding rules, pertinently thos
 - Art assets should remain structurally sound:
     - Adjustments can be made via shaders to colour, brightness etc, but must be made across the entire texture uniformly. i.e. the same shader must be run across each fragment.
     - (Jimbly) I'd want to allow reasonable cutting, especially for technical reasons.  E.g. cutting a wall + door texture into 2 to animate it, or use one style door with a different style frame, and similar - this overlaps with what shape of meshes you're allowed to put these textures on
+    - (Local) Art asset should maintain its original 1:1 aspect ratio in world coordinates. You can apply post-processing and such effect that distort the world but you can't make a line out of some tile and use it as a divider line inside a UI component
     - (Local) I think each sprite should not have too many colors
     - (Local) I think it should be allowed to reinterpret what is transparent in the asset at will (though stil on color basis of the original texture)
     - (Local) I think it should be allowed to tile or otherwise use more than one texture per wall/floor/ceiling to mosaically build up a more complex image
