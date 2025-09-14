@@ -13,12 +13,14 @@ A file to document specific ideas and concerns regarding rules, pertinently thos
 ## Consensus / Discussion Needed
 - Generative AI
   - (Local) I think we should ban any asset creation with generative AI. There should be no need to add assets anyhow, but if we have "slots" open for art, sound fx, or music then I think it should be hand made
+  - (Slippers) Hard agree, of all the jams where genAI doesn't make sense, this has got to be one of them. Getting genAI to actually produce pixel art from what I understand is a nightmare, but if someone wants to use AI and hand-paint something such that we cannot tell the difference, then we won't know anyway. I Wouldn't want to see any clear and obvious uses.
 
 - 3D Meshes - Permitted usage:
     - Should meshes be limited to primitive shapes?
     - For example is it limited to planes, cubes and other similar shapes, or can more complex meshes be used as long as the provided art is used to texture them?
       - (Local) If we allow it we should have a very limited number of custom shapes one can add
       - (Local) I think it might be fine to add at least a cube primitive as an allowed 3D art. Maybe some other primitive too like sphere and pyramid? 
+      - (Slipeprs) The potential problem with this limitation is that meshes are used for a wide vareity of things such as the subsequently discussed particle emitters, which can be mesh-based, as well as collision shapes, and if people want to skin 3d enemies (not likely, but I'd like to allow it if someone is brave enough) and make composite textures rather than just having billboards.
 
 - Particle systems:
     - Are particle systems allowed, provided that emmiters only use spirtes / billboards of the given art assets?
@@ -36,6 +38,7 @@ A file to document specific ideas and concerns regarding rules, pertinently thos
 - Art assets should remain structurally sound:
     - Adjustments can be made via shaders to colour, brightness etc, but must be made across the entire texture uniformly. i.e. the same shader must be run across each fragment.
     - (Jimbly) I'd want to allow reasonable cutting, especially for technical reasons.  E.g. cutting a wall + door texture into 2 to animate it, or use one style door with a different style frame, and similar - this overlaps with what shape of meshes you're allowed to put these textures on
+        - (Slippers) cutting sounds reasonable as long as the edges meet at where they are cut, such as the example of animating a door.
     - (Local) Art asset should maintain its original 1:1 aspect ratio in world coordinates. You can apply post-processing and such effect that distort the world but you can't make a line out of some tile and use it as a divider line inside a UI component
     - (Local) I think each sprite should not have too many colors
     - (Local) I think it should be allowed to reinterpret what is transparent in the asset at will (though stil on color basis of the original texture)
@@ -43,6 +46,7 @@ A file to document specific ideas and concerns regarding rules, pertinently thos
 
 - Voice
   - (Local) I think we should be allowed some or even as many as we want voice lines into the game as it sort of equates adding text. And I don't think we want to limit text do we?
+  - (Slippers) I think that's okay, but I would like to strictly enforce the no genAI on this (if we agree on that as a rule).
    
 ## Possible loopholes
 
