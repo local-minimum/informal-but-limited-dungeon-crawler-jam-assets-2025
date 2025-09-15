@@ -47,7 +47,7 @@ We must carefully consider if we wish to reword / change any of these rules, and
 
 ## Recommendations
 
-- Copy from [DCJam](<https://itch.io/jam/dcjam2024>) but add default of Q/E for strafe
+- Copy from [DCJam](<https://itch.io/jam/dcjam2025>) but add default of Q/E for strafe
 
 ## Prizes
 
