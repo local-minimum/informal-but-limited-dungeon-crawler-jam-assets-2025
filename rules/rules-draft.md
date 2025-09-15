@@ -1,6 +1,6 @@
 # General rules
 
-[Copy from DCJam](<https://itch.io/jam/dcjam2024>), we've made some minor tweaks [here](https://github.com/local-minimum/informal-but-limited-dungeon-crawler-jam-assets-2025/blob/main/rules/rules-dcjam-updated.md) (refine Goal, no AI/3rd party assets)
+[Copy from DCJam](<https://itch.io/jam/dcjam2025>), we've made some minor tweaks [here](https://github.com/local-minimum/informal-but-limited-dungeon-crawler-jam-assets-2025/blob/main/rules/rules-dcjam-updated.md) (refine Goal, no AI/3rd party assets)
 
 **Rating**: Entries will be rated in multiple categories (TODO: draft these later, if we agree we want multiple, but I'll throw out the controversial set of "Overall Fun", "Innovation", "Retrocity", "Asset Utilization")
 
