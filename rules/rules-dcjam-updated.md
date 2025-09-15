@@ -1,6 +1,6 @@
 # Updated DCJAM 2025 rules
 
-Rules from the DCJAM 2025 itch.io page, with irrelevant rules stripped out.
+Rules from the [DCJAM 2025](https://itch.io/jam/dcjam2025) itch.io page, with irrelevant rules stripped out.
 
 Temporary placeholders are preceeded with (DRAFT), for rules we will need to add at a minimum, other modifications **in bold**.
 
