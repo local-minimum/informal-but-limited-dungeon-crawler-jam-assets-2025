@@ -1,14 +1,8 @@
 # General rules
 
-[Copy from DCJam](<https://itch.io/jam/dcjam2024>), with the following (minor) changes:
-
-**Goal**: Using limited assets, create a finished and reasonably polished dungeon crawler; not a prototype, proof of concept or tech demo, but a small game you can play from beginning to end.
-
-**FAQ**: No to 3rd party assets (Gen AI or pre-made other than as provided)
+[Copy from DCJam](<https://itch.io/jam/dcjam2024>), we've made some minor tweaks [here](https://github.com/local-minimum/informal-but-limited-dungeon-crawler-jam-assets-2025/edit/main/rules/rules-dcjam-updated.md) (refine Goal, no AI/3rd party assets)
 
 **Rating**: Entries will be rated in multiple categories (TODO: draft these later, if we agree we want multiple, but I'll throw out the controversial set of "Overall Fun", "Innovation", "Retrocity", "Asset Utilization")
-
-**Recommendations**: Add default of Q/E for strafe
 
 # Limited Assets Rules
 * Limit yourself to only using the game assets provided
