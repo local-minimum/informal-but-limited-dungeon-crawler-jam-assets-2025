@@ -6,6 +6,8 @@ Temporary placeholders are preceeded with (DRAFT), for rules we will need to add
 
 We must carefully consider if we wish to reword / change any of these rules, and shouldn't blinding assume the existing DCJAM rules are right for this jam.
 
+## Goal
+**Using limited assets,** create a finished and reasonably polished dungeon crawler; not a prototype, proof of concept or tech demo, but a small game you can play from beginning to end.
 
 ## Rules
 
@@ -36,15 +38,16 @@ We must carefully consider if we wish to reword / change any of these rules, and
 - Can I re-use any old source code? You may re-use helper libraries and classes that makes little sense to write again from scratch.
 - Can I start working on the game before the jam starts? No. The game must be a new game project started and finished within the jam time frame, not just another week of work on an existing one.
 - Can I put a price tag on my game? The game must be free to download and play to the end. A commercial version of the game may of course be released after the jam ends, perhaps with added content and features.
-- Can I use AI generated content? Yes, provided you are not including any illegal or copyright infringing content.
-
-- Can I use pre-made assets or asset packs? You may use 3rd party asset packs, stock music or sound effects but must attribute them according to their licenses. If you have assets or asset packs you've made yourself that is also accepted.
-    - **TBD, depending on rules regarding open assets**
+- Can I use **AI generated content or pre-made assets or asset packs**? **No, you must use the provided limited assets, and any bonus assets made for the jam must be made by the jam participants.**
 
 
 ## Rating
 
 - TBD
+
+## Recommendations
+
+- Copy from [DCJam](<https://itch.io/jam/dcjam2024>) but add default of Q/E for strafe
 
 ## Prizes
 
