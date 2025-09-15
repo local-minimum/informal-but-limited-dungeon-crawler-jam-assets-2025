@@ -2,7 +2,7 @@
 
 Rules from the DCJAM 2025 itch.io page, with irrelevant rules stripped out.
 
-Temporary placeholders are preceeded with (DRAFT), for rules we will need to add at a minimum.
+Temporary placeholders are preceeded with (DRAFT), for rules we will need to add at a minimum, other modifications **in bold**.
 
 We must carefully consider if we wish to reword / change any of these rules, and shouldn't blinding assume the existing DCJAM rules are right for this jam.
 
