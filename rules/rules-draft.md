@@ -26,9 +26,9 @@
   * Fonts may be styled (drop-shadows, outlines, etc) as long as they remain recognizable
 * **Audio**
   * Music and sound effects should be sourced from the provided assets
-  * Audio can be distorted by effects and overlayed but as with skewing the textures, it may not be transformed entirely out of recognition. I.e. you can not crop a track down to a note and use that as an instrument to create entirely new melodies.
+  * Audio can be distorted by effects and overlayed but as with skewing the textures, it may not be transformed entirely out of recognition. I.e. you can not crop a track down to a note and use that as an instrument to create entirely new melodies
   * Original voice recordings are allowed, but the same AI-rules apply as with all other asset creation (TODO: insert recommended sampling rate/settings to match style)
 * **Text**
   * There is no limitation to text, but the same AI-rules apply as with all other asset creation
-  * If you feel this is too permissive, consider outlawing all words containing the letter "I" or similar.
-* If you feel unclear on whether something is allowed or not, feel free to reach out on Discord.  It's meant to be a game jam where you challenge yourself to only use premade assets.
+  * If you feel this is too permissive, consider using no text, or outlawing all words containing the letter "I" or similar
+* If you feel unclear on whether something is allowed or not, feel free to reach out on Discord.  It's meant to be a game jam where you challenge yourself to only use premade assets
