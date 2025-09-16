@@ -21,6 +21,7 @@
   * Fonts may be styled (drop-shadows, outlines, etc) as long as they remain recognizable
 * **Audio**
   * Music and Sound effects should be composed from the provided assets.
+  * Audio can be distorted by effects but as with skewing the textures, it may not be transformed entirely out of recognition. I.e. you can not crop a track down to a note and use that as an instrument to create entirely new melodies. 
   * (TODO: insert line about what's allowed to be done with the provided SFX/music)
   * Original voice recordings are allowed, but the same AI-rules apply as with all other asset creation (TODO: insert recommended sampling rate/settings to match style)
 * **Text**
