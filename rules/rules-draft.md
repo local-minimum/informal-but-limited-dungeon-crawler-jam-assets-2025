@@ -11,7 +11,7 @@
 * Limit yourself to only using the game assets provided
 * To keep with the spirit of the jam, where transformations and combinations of assets are allowed as specified below, the original asset must always still be recognizable
 * **Graphics**
-  * You may additionally use, plus up to 8 original, hand-made (no Gen-AI), "bonus" tiles in the same style - 12x12, limited palette per tile. Bonus tiles must be shared on the itch game page (maybe: and may be included by the jam organizers in a post-jam asset pack release?)
+  * You may additionally use, plus up to 8 original, hand-made (no Gen-AI), "bonus" tiles in the same style - 12x12, limited palette per tile. Bonus tiles must be shared on the itch game page, and unless otherwise specified are released as CC0 and may be included in the next version of this jam's asset pack
   * The assets may be palette swapped, stretched, scaled, used as textures on 2D/3D primitives (quads/cubes/spheres/cylinders/particles/etc), but all textures must be recognizably from the asset pack (or your bonus tiles) (TODO: provide examples)
   * "Palette swapping" means changing all pixels of a color in a tile to a (new) single color (including transparent) (TODO: provide examples)
   * For the bonus tiles and palette swapping, you are not limited to colors in the original asset, but sticking to a limited palette will help with consistency and to follow the "original assets must always be recognizable" rule
@@ -20,7 +20,7 @@
   * It is not allowed to use models, textures, fonts or other assets that come with your game engine (with the exception of primitives as noted above)
   * Example against the spirit of the jam: any overlaying or compositing where the result is essentially a completely new texture that could more simply have been authored
   * Exception: A logo/intro screen for you/your brand/engine is allowed (e.g. "by Super-Great Games", "powered by Godot")
-  * Custom materials, shaders, post-processing, lighting, etc, are all allowed, as long as all textures are sourced from the assets and input colors from the provided palette (examples: dithered lighting, outlining)
+  * Custom materials, shaders, post-processing, lighting, etc, are all allowed, as long as all textures are sourced from the assets (examples: dithered lighting, outlining)
 * **Fonts**
   * The fonts provided in the asset pack must be used throughout the game 
   * Fonts may be styled (drop-shadows, outlines, etc) as long as they remain recognizable
