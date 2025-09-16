@@ -8,14 +8,21 @@
 * Charm/Individuality
 
 # Limited Assets Rules
+
+<img width="456" height="368" alt="header" src="https://github.com/user-attachments/assets/3323d30c-5a09-4191-ae8f-e6e0386d7a6f" />
+
 * Limit yourself to only using the game assets provided
 * To keep with the spirit of the jam, where transformations and combinations of assets are allowed as specified below, the original asset must always still be recognizable
 * **Graphics**
   * You may additionally use, plus up to 8 original, hand-made (no Gen-AI), "bonus" tiles in the same style - 12x12, limited palette per tile. Bonus tiles must be shared on the itch game page, and unless otherwise specified are released as CC0 and may be included in the next version of this jam's asset pack
-  * The assets may be palette swapped, stretched, scaled, used as textures on 2D/3D primitives (quads/cubes/spheres/cylinders/particles/etc), but all textures must be recognizably from the asset pack (or your bonus tiles) (TODO: provide examples)
-  * "Palette swapping" means changing all pixels of a color in a tile to a (new) single color (including transparent) (TODO: provide examples)
+  * The assets may be palette swapped, stretched, scaled, used as textures on 2D/3D primitives (quads/cubes/spheres/cylinders/particles/etc), but all textures must be recognizably from the asset pack (or your bonus tiles)
+  * "Palette swapping" means changing all pixels of a color in a tile to a (new) single color (including transparent)
+
+<img width="1000" height="440" alt="swaps-and-stretch" src="https://github.com/user-attachments/assets/439d6f81-e0e9-4f37-b14d-454878e8a276" />
   * For the bonus tiles and palette swapping, you are not limited to colors in the original asset, but sticking to a limited palette will help with consistency and to follow the "original assets must always be recognizable" rule
-  * Cropping tiles to extract recognizable elements (e.g. just the door from a door + frame tile, or a lever from one tile to place in front of a different background) is allowed, as long as the result is still identifiable (TODO: provide examples)
+  * Cropping tiles to extract recognizable elements (e.g. just the door from a door + frame tile, or a lever from one tile to place in front of a different background) is allowed, as long as the result is still identifiable
+
+<img width="832" height="448" alt="crops" src="https://github.com/user-attachments/assets/866b71c9-049b-47b9-90d5-cf117b5df2e6" />
   * Tiles do not necessarily need to be used 1:1 for wall textures (e.g. you may texture a wall with a 3x3 grid of tiles, as long as the originals are still identifiable)
   * It is not allowed to use models, textures, fonts or other assets that come with your game engine (with the exception of primitives as noted above)
   * Example against the spirit of the jam: any overlaying or compositing where the result is essentially a completely new texture that could more simply have been authored
@@ -27,7 +34,7 @@
 * **Audio**
   * Music and sound effects should be sourced from the provided assets
   * Audio can be distorted by effects and overlayed but as with skewing the textures, it may not be transformed entirely out of recognition. I.e. you can not crop a track down to a note and use that as an instrument to create entirely new melodies
-  * Original voice recordings are allowed, but the same AI-rules apply as with all other asset creation (TODO: insert recommended sampling rate/settings to match style)
+  * Original voice recordings are allowed, but the same AI-rules apply as with all other asset creation (a recommended sampling rate/settings to match style will be provided)
 * **Text**
   * There is no limitation to text, but the same AI-rules apply as with all other asset creation
   * If you feel this is too permissive, consider using no text, or outlawing all words containing the letter "I" or similar
