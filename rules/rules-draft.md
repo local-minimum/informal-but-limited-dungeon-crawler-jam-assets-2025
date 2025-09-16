@@ -7,7 +7,7 @@
 # Limited Assets Rules
 * Limit yourself to only using the game assets provided
 * **Graphics**
-  * You may additionally use, plus up to 10 original, hand-made (no Gen-AI), "bonus" tiles in the same style - 12x12, limited palette.  Bonus tiles must be shared on the itch game page (maybe: and may be included by the jam organizers in a post-jam asset pack release?)
+  * You may additionally use, plus up to 10 original, hand-made (no Gen-AI), "bonus" tiles in the same style - 12x12, limited palette. Bonus tiles must not exceed 50% of tiles used, so if you make 10 custom tiles you must use at least 10 tiles from the provided set. Bonus tiles must be shared on the itch game page (maybe: and may be included by the jam organizers in a post-jam asset pack release?)
   * The assets may be palette swapped, stretched, scaled, used as textures on 2D/3D primitives (quads/cubes/spheres/cylinders/particles/etc), but all textures must be recognizably from the asset pack (or your bonus tiles) (TODO: provide examples)
   * "Palette swapping" means that every texel which was the same color in the original image should all be swapped to the same (new) color (including transparent) (TODO: provide examples)
   * Cropping tiles to extract recognizable elements (e.g. just the door from a door + frame tile, or a lever from one tile to place in front of a different background) is allowed, as long as the result is still identifiable (TODO: provide examples)
@@ -15,9 +15,15 @@
   * It is not allowed to use models, textures, fonts or other assets that come with your game engine (with the exception of primitives as noted above)
   * Example against the spirit of the jam: any overlaying or compositing where the result is essentially a completely new texture that could more simply have been authored
   * Exception: A logo/intro screen for you/your brand/engine is allowed (e.g. "by Super-Great Games", "powered by Godot")
-* Fonts may be styled (drop-shadows, outlines, etc) as long as they remain recognizable
-* Custom materials, shaders, post-processing, etc, are all allowed, as long as all textures are sourced from the assets (examples: dithered lighting, outlining)
+  * Custom materials, shaders, post-processing, etc, are all allowed, as long as all textures are sourced from the assets and input colors from the provided palette (examples: dithered lighting, outlining)
+* **Fonts**
+  * The fonts provided in the asset pack must be used throughout the game 
+  * Fonts may be styled (drop-shadows, outlines, etc) as long as they remain recognizable
 * **Audio**
+  * Music and Sound effects should be composed from the provided assets.
   * (TODO: insert line about what's allowed to be done with the provided SFX/music)
-  * Original voice recordings are allowed (TODO: insert recommended sampling rate/settings to match style)
+  * Original voice recordings are allowed, but the same AI-rules apply as with all other asset creation (TODO: insert recommended sampling rate/settings to match style)
+* **Text**
+  * There is no limitation to text, but the same AI-rules apply as with all other asset creation
+  * If you feel this is too permissive, consider outlawing all words containing the letter "I" or similar.
 * If you feel unclear on whether something is allowed or not, feel free to reach out on Discord.  It's meant to be a game jam where you challenge yourself to only use premade assets.
