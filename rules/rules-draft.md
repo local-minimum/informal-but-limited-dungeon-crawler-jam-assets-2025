@@ -6,11 +6,12 @@
 
 # Limited Assets Rules
 * Limit yourself to only using the game assets provided
-* To keep with the spirit of the jam, where transformations of assets is allowed as specified below, the original asset must always still be recognizable
+* To keep with the spirit of the jam, where transformations and combinations of assets are allowed as specified below, the original asset must always still be recognizable
 * **Graphics**
-  * You may additionally use, plus up to 8 original, hand-made (no Gen-AI), "bonus" tiles in the same style - 12x12, limited palette. Bonus tiles must be shared on the itch game page (maybe: and may be included by the jam organizers in a post-jam asset pack release?)
+  * You may additionally use, plus up to 8 original, hand-made (no Gen-AI), "bonus" tiles in the same style - 12x12, limited palette per tile. Bonus tiles must be shared on the itch game page (maybe: and may be included by the jam organizers in a post-jam asset pack release?)
   * The assets may be palette swapped, stretched, scaled, used as textures on 2D/3D primitives (quads/cubes/spheres/cylinders/particles/etc), but all textures must be recognizably from the asset pack (or your bonus tiles) (TODO: provide examples)
   * "Palette swapping" means changing all pixels of a color in a tile to a (new) single color (including transparent) (TODO: provide examples)
+  * For the bonus tiles and palette swapping, you are not limited to colors in the original asset, but sticking to a limited palette will help with consistency and to follow the "original assets must always be recognizable" rule
   * Cropping tiles to extract recognizable elements (e.g. just the door from a door + frame tile, or a lever from one tile to place in front of a different background) is allowed, as long as the result is still identifiable (TODO: provide examples)
   * Tiles do not necessarily need to be used 1:1 for wall textures (e.g. you may texture a wall with a 3x3 grid of tiles, as long as the originals are still identifiable)
   * It is not allowed to use models, textures, fonts or other assets that come with your game engine (with the exception of primitives as noted above)
