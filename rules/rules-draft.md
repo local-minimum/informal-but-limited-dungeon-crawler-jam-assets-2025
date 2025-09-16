@@ -14,6 +14,7 @@
   * Tiles do not necessarily need to be used 1:1 for wall textures (e.g. you may texture a wall with a 3x3 grid of tiles, as long as the originals are still identifiable)
   * It is not allowed to use models, textures, fonts or other assets that come with your game engine (with the exception of primitives as noted above)
   * Example against the spirit of the jam: any overlaying or compositing where the result is essentially a completely new texture that could more simply have been authored
+  * Exception: A logo/intro screen for you/your brand/engine is allowed (e.g. "by Super-Great Games", "powered by Godot")
 * Fonts may be styled (drop-shadows, outlines, etc) as long as they remain recognizable
 * Custom materials, shaders, post-processing, etc, are all allowed, as long as all textures are sourced from the assets (examples: dithered lighting, outlining)
 * **Audio**
