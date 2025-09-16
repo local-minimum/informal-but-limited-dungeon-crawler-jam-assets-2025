@@ -1,6 +1,6 @@
 # General rules
 
-[Copy from DCJam](<https://itch.io/jam/dcjam2025>), we've made some minor tweaks [here](https://github.com/local-minimum/informal-but-limited-dungeon-crawler-jam-assets-2025/blob/main/rules/rules-dcjam-updated.md) (refine Goal, no AI/3rd party assets)
+General rules will be familiar to anyone who participated in [a previous DCJam](<https://itch.io/jam/dcjam2025>), we've made some minor tweaks [here](https://github.com/local-minimum/informal-but-limited-dungeon-crawler-jam-assets-2025/blob/main/rules/rules-dcjam-updated.md).
 
 **Rating**: Entries will be rated in the following categories:
 * Overall/Fun
@@ -30,11 +30,11 @@
 <img width="832" height="448" alt="crops" src="https://github.com/user-attachments/assets/866b71c9-049b-47b9-90d5-cf117b5df2e6" />
 
 * **Fonts**
-  * The fonts provided in the asset pack must be used throughout the game 
+  * Only the fonts provided in the asset pack may be used
   * Fonts may be styled (drop-shadows, outlines, etc) as long as they remain recognizable
 * **Audio**
   * Music and sound effects should be sourced from the provided assets
-  * Audio can be distorted by effects and overlayed but as with skewing the textures, it may not be transformed entirely out of recognition. I.e. you can not crop a track down to a note and use that as an instrument to create entirely new melodies
+  * Audio can be distorted by effects and overlayed but, as with skewing the textures, it may not be transformed entirely out of recognition. I.e. you can not crop a track down to a note and use that as an instrument to create entirely new melodies
   * Original voice recordings are allowed, but the same AI-rules apply as with all other asset creation (a recommended sampling rate/settings to match style will be provided)
 * **Text**
   * There is no limitation to text, but the same AI-rules apply as with all other asset creation
