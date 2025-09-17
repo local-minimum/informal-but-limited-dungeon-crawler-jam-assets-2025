@@ -22,17 +22,14 @@ We must carefully consider if we wish to reword / change any of these rules, and
 - The game must have at least one way to affect character stat(s). Examples are resting, potions, items with bonuses, food, water, powerups etc.
 - The game must have combat or a similar mechanic for determining outcome of certain situations, enemy encounters and events.
 
-- **(DRAFT) The game must include a clearly visible interpretation of the theme. Entries without a clear and visible interpretation of the theme will be disqualified.**
-    - **Will we have a theme? If so, 1 or multiple to choose from?**
+- There will be a theme and it must be included in the game. You will be asked to clarify how the theme is incorporated when you submit.
 
 - Your game must not contain nudity, hateful language or visuals. Please consider avoiding extremely strong language and excessive gore, as the games in this jam should be suitable for a general audience. Failure to do so may result in disqualification.
 
 
 ## FAQ
 
-- **(DRAFT) Will there be a theme? Yes, there will be X themes. They will be announced right before the jam starts.**
-    - **TBD**
-
+- **Will there be a theme? Yes, there will be a theme, or maybe even themes. They will be announced right before the jam starts.**
 - What game engine can I use? You may use any game engine like Unity, Unreal Engine, Godot, Love2D etc.
 - Can I use my own game engine? Yes, you may use your own home-brew game engine.
 - Can I re-use any old source code? You may re-use helper libraries and classes that makes little sense to write again from scratch.
@@ -43,7 +40,11 @@ We must carefully consider if we wish to reword / change any of these rules, and
 
 ## Rating
 
-- TBD
+Rating will be done in three categories
+
+- "Overall / Fun" The general quality of the game, how well made it is, how complete and enjoyable experience it is playing
+- "Asset (ab)use" Did the game use or abuse the supplied asset-pack in any particularly interesting or beautiful way
+- "Charm/Individuality" Did the game have some particular quality, independently of how it played overall, that stood out
 
 ## Recommendations
 
@@ -51,4 +52,4 @@ We must carefully consider if we wish to reword / change any of these rules, and
 
 ## Prizes
 
-- TBD - likely nil, perhaps discord role, perhaps not - should probably depend on participation volume (would be good to keep that role somewhat rare and exclusive)
+No prizes are planned. We do this for the joy of making games! But we cannot guarantee that no steam keys to games released buy the people who frequent our discord will end up being a reward.
