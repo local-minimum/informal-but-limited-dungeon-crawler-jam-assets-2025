@@ -52,4 +52,4 @@ Rating will be done in three categories
 
 ## Prizes
 
-No prizes are planned. We do this for the joy of making games! But we cannot guarantee that no steam keys to games released buy the people who frequent our discord will end up being a reward.
+No prizes are planned. We do this for the joy of making games! But it is entirely possible that some steam keys to games released buy the people who frequent our discord will end up in a prize pool.
