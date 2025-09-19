@@ -11,14 +11,14 @@ Here are some edge cases / examples to get the ball rolling.
 
 Normal maps can be easily generated procedurally from the provided assets, and give informtation to the engine about how to light an object to give the appearance of depth. I propose that their use are acceptable provided they are authored from the provided assets and used only for that purpose; for example it is not permitted to use a normal map as another colour texture.
 
-![example use of normal maps](rules\3d-rules\images\normals_example.png)
+![example use of normal maps](normals_example.png)
 
 
 ## HDRIs
 
 HDRIs are a panoramic photos that contain high dynamic range light and colour data. They can be used by engines to full light a scene with realistic lighting. This is a one-click solution that removes substantial burden for lighting a 3D scene. The questionable issue occures in that they are an external texture.
 
-![example use of hdris](rules\3d-rules\images\hdri_example.png)
+![example use of hdris](hdri_example.png)
 
 (Slip) I propose that we allow the use of these maps, much like normals, under the proviso that they are only used for their lighting data and that the panorama is never seen.
 
@@ -27,7 +27,7 @@ HDRIs are a panoramic photos that contain high dynamic range light and colour da
 
 Primitve meshes are allowed in the rules, primarily to create walls & floors. However there might be some scope for them to be used to block out slightly more interesting features.
 
-![example use of composite meshes](rules\3d-rules\images\meshes_examples.png)
+![example use of composite meshes](meshes_examples.png)
 
 (Slip) I propose that we essentially follow the 2D rules on this, that composites are permitted provided they are recognisable from the given assets. There are however some very grey areas here as to how far one might be allowed to take this.
 
