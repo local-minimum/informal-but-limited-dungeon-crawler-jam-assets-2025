@@ -33,3 +33,11 @@ Primitve meshes are allowed in the rules, primarily to create walls & floors. Ho
 
 
 I've run out of time here, there are many many more edge cases; especially around the use of particle and shaders, but I believe we have spoken about these already to establish some rules.
+
+## Meshes With Deformation
+
+These include things that can be done with shader effects such as displacement mapping, even if no new meshes were modeled.
+
+<img width="498" height="478" alt="arlorean" src="https://github.com/user-attachments/assets/a3ca3bcf-b973-492d-b511-bddc20157ff2" />
+
+Example made by Arlorean with a mesh, seems like it keeps with the "original asset must always still be recognizable" spirit and encourages creativity within the limitations?
