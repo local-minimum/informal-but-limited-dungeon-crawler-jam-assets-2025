@@ -31,6 +31,7 @@ Primitve meshes are allowed in the rules, primarily to create walls & floors. Ho
 
 (Slip) I propose that we essentially follow the 2D rules on this, that composites are permitted provided they are recognisable from the given assets. There are however some very grey areas here as to how far one might be allowed to take this.
 
+(Jimb) I'd probably classify the last example also as a "yellow" borderline case.
 
 I've run out of time here, there are many many more edge cases; especially around the use of particle and shaders, but I believe we have spoken about these already to establish some rules.
 
