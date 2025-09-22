@@ -10,10 +10,10 @@
   * **ITEMS** - generally alpha-masked, anything that would be at home in an inventory - equipment, potions, coins
   * **UTILITY** - completely abstract tiles, UI components, borders, buttons, gradients, stat icons
 * Within each folder:
-  * Each author can make a folder for themselves if they want, though it might be easier to view thumbnails of what's currently available if we just work flat in each folder.
   * Author either individual files, or multiple related tiles in a single file
     * If individual files, just name each file appropriately
     * If multiple tiles in a single file, name the file more generally (e.g. `floors`) and the unique name is just the file plus an index (e.g. `floors-01`).  Make sure unused portions of the file are empty or a solid color.
   * Feel free to also commit source files in Aseprite or PSD or whatever format you work in if you wish, we'll ignore those when delivering to jammers
+* Each author can make a folder for themselves if they want, though it might be easier to view thumbnails of what's currently available if we just work flat in each folder, and I don't expect too many conflicts based on how many people are volunteering, but if you want to completely avoid conflicts, just make a folder with your name (either `assets/dungeon/jimb/` and `assets/details/jimb` *or* `assets/jimb/dungeon/` and `assets/jimb/details` seems fine)
 
 For context, but not directly related to the organization, for delivering the asset pack to jammers, we'll run a script that chops any image larger than 12x12 into individual tiles (discarding any that are completely the same color / empty) and generates names so we can deliver a collection of individual PNGs.  Then, we'll also run something to grab every image in every folder and combine them into a single giant atlas for people who want a single PNG.  People can use whichever of those formats is most useful.
