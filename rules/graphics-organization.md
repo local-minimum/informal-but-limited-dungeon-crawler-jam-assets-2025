@@ -1,23 +1,20 @@
-# Graphic asset organization proposal
+# Graphic asset "organization"
 * Main goals: make it as easy as possible for anyone to author a bunch of stuff, and not have it be a _completely_ disorganized mess (only a partially disorganized mess)
-* For now, everyone can just create a file or folder in `assets/tiles` with their name (e.g. `assets/tiles/jimb/file1.png` or just a single `assets/tiles/jimb.png` if you prefer), and go wild
+* For now, everyone can just create a folder in `assets/tiles` with their name (e.g. `assets/tiles/jimb/file1.png`), and go wild
+* If putting multiple tiles in one file:
+  * Ensure the tiles are 12x12 and aligned to the 12x12 grid so an automated tool can cut it up trivially
+  * Ensure unused portions of the file are empty or a solid color
+* If you'd like just a little organization, create 5 files or sub-folders with the names below
+* Feel free to also commit source files in Aseprite or PSD or whatever format you work in if you wish, we'll ignore those when delivering to jammers
 
 # Later organization / distribution to jammers
-* TODO (Jimb) UPDATE STUFF BELOW
-* Side goal: every tile should have some unique, if vague, hopefully meaningful, name (even if it's just "floor-37"), so that these can be delivered (but not necessarily authored) as individual .PNGs per tile
-* Use _dashes_ as word delimiter (I'd also be happy with underscores or spaces or CamelCase, as long as we all do the same - speak now or forever hold your peace!)
-* **Always**: name things from most general to most specific, e.g. `dungeon/floor-wooden-broken-02`
-* Top-level folders:
+* Goal: every tile needs a filename, so should have some unique, if vague, hopefully meaningful, name (even if it's just "dungeon-37"), so that these can be delivered (but not necessarily authored) as individual .PNGs per tile
+* Probably this just means categorizing each tile into one of these categories:
   * **DUNGEON** - generally opaque, useful to build structure - walls, ceilings, floors, doors
   * **DETAILS** - generally alpha-masked, useful as details or decals - trees, chests, torches, fences, rocks, signs
   * **MONSTER** - any mobile living(ish) thing - enemies, NPCs, robots, space ships
   * **ITEMS** - generally alpha-masked, anything that would be at home in an inventory - equipment, potions, coins
   * **UTILITY** - completely abstract tiles, UI components, borders, buttons, gradients, stat icons
-* Within each folder:
-  * Author either individual files, or multiple related tiles in a single file
-    * If individual files, just name each file appropriately
-    * If multiple tiles in a single file, name the file more generally (e.g. `floors`) and the unique name is just the file plus an index (e.g. `floors-01`).  Make sure unused portions of the file are empty or a solid color.
-  * Feel free to also commit source files in Aseprite or PSD or whatever format you work in if you wish, we'll ignore those when delivering to jammers
-* Each author can make a folder for themselves if they want, though it might be easier to view thumbnails of what's currently available if we just work flat in each folder, and I don't expect too many conflicts based on how many people are volunteering, but if you want to completely avoid conflicts, just make a folder with your name (either `assets/dungeon/jimb` and `assets/details/jimb` *or* `assets/jimb/dungeon` and `assets/jimb/details` seems fine)
+* If things become unwieldy, we'll do some re-organizing during asset creation, but if not, we'll organize at the very end
+* For context, but not directly related to the organization, for delivering the asset pack to jammers, we'll run a script that chops any image larger than 12x12 into individual tiles (discarding any that are completely the same color / empty) and generates names so we can deliver a collection of individual PNGs.  Then, we'll also run something to grab every image in every folder and combine them into a single giant atlas for people who want a single PNG.  People can use whichever of those formats is most useful.
 
-For context, but not directly related to the organization, for delivering the asset pack to jammers, we'll run a script that chops any image larger than 12x12 into individual tiles (discarding any that are completely the same color / empty) and generates names so we can deliver a collection of individual PNGs.  Then, we'll also run something to grab every image in every folder and combine them into a single giant atlas for people who want a single PNG.  People can use whichever of those formats is most useful.
