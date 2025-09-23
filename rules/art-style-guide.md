@@ -3,6 +3,7 @@ We welcome art from anybody that wants to contribute to the jam! We're going to 
 
 ## Basic ideas
 The style is to have 12x12 pixel images that include walls, monsters, floor, ceiling, objects in the world, UI elements, etc. Everything. Here are some examples:
+
 ![img](./images/sample-tiles.png "img")
 
 Here are a couple screenshots of the assets in Jimbly's engine:
@@ -37,9 +38,11 @@ For non-monster things 2 frames is probably fine but if you want to create more 
 It's also fine to create multiple states of the same thing. For example a closed chest, and opened chest, a destroyed chest, etc. Just create them as different tiles.
 
 **Sample 2 frame animations**
+
 ![img](./images/torch.gif "img")![img](./images/fountain.gif "img")
 
 **Sample 4 frames for an enemy**
+
 ![img](./images/monster-frames.png "img")
 
 ## Conclusion
