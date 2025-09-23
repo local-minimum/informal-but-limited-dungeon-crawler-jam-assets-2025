@@ -1,5 +1,9 @@
 # Graphic asset organization proposal
 * Main goals: make it as easy as possible for anyone to author a bunch of stuff, and not have it be a _completely_ disorganized mess (only a partially disorganized mess)
+* For now, everyone can just create a file or folder in `assets/tiles` with their name (e.g. `assets/tiles/jimb/file1.png` or just a single `assets/tiles/jimb.png` if you prefer), and go wild
+
+# Later organization / distribution to jammers
+* TODO (Jimb) UPDATE STUFF BELOW
 * Side goal: every tile should have some unique, if vague, hopefully meaningful, name (even if it's just "floor-37"), so that these can be delivered (but not necessarily authored) as individual .PNGs per tile
 * Use _dashes_ as word delimiter (I'd also be happy with underscores or spaces or CamelCase, as long as we all do the same - speak now or forever hold your peace!)
 * **Always**: name things from most general to most specific, e.g. `dungeon/floor-wooden-broken-02`
