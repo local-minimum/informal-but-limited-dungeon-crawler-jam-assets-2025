@@ -16,7 +16,7 @@ A couple things to notice about the tiles:
 * The monsters are also 12x12 (as is everything)
 * Everything is a 24-bit color `.png`. Transparency is transparent - we won't be using a reserved color for transparent. If you want to use hot pink for transparent then use `0xFF00FF` and we'll just replace it with transparent before the jam starts.
 ## Palette
-We want to use a limited and consistent palette. To this end we are authoring all the art tiles with the same palette which is the [Lospec Endesga-32 palette](https://lospec.com/palette-list/endesga-32). In the jam you can alter the palette to look like whatever you want but it's important to keep all the original tiles using the same 32 colors.
+We want to use a limited and consistent palette. To this end we are authoring all the art tiles with the same palette which is the [Lospec Endesga-32 palette](https://lospec.com/palette-list/endesga-32) (`EDG32` within Aseprite). In the jam you can alter the palette to look like whatever you want but it's important to keep all the original tiles using the same 32 colors.
 
 ![img](./images/endesga-32-32x.png "img")
 
