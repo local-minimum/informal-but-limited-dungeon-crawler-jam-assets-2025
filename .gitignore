@@ -1,2 +1,4 @@
 # macos
 *.DS_Store
+node_modules
+distro/out
