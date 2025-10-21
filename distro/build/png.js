@@ -1,7 +1,7 @@
 const assert = require('assert');
 const { PNG } = require('pngjs');
 
-// const PNG_GRAYSCALE = 0;
+const PNG_GRAYSCALE = 0;
 const PNG_RGB = 2;
 const PNG_RGBA = 6;
 
@@ -51,7 +51,7 @@ exports.pngRead = pngRead;
 
 function pngAlloc({ width, height, byte_depth, comment }) {
   // console.log('pngAlloc', width, height, comment || 'unknown');
-  let colorType = byte_depth === 3 ? PNG_RGB : PNG_RGBA;
+  let colorType = byte_depth === 1 ? PNG_GRAYSCALE : byte_depth === 3 ? PNG_RGB : PNG_RGBA;
   let ret = new PNG({ width, height, colorType });
   let num_bytes = width * height * 4;
   if (!ret.data) {
