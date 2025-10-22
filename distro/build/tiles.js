@@ -110,7 +110,7 @@ function colorInPalette(r, g, b) {
 
 function writePNGs(filename, img) {
   let outbuf = pngWrite(img);
-  fs.writeFileSync(filename, outbuf);
+  fs.writeFileSync(filename.replace('/color/', '/'), outbuf);
 
   let greyscale = pngAlloc({ width: img.width, height: img.height, byte_depth: 4 });
   let lookup = pngAlloc({ width: img.width, height: img.height, byte_depth: 4 });
@@ -159,8 +159,7 @@ const REMAPPING1 = {
 
 mkdir(OUTDIR);
 mkdir(OUTDIR + '/tiles');
-mkdir(OUTDIR + '/tiles/color');
-mkdir(OUTDIR + '/tiles/color/individual');
+mkdir(OUTDIR + '/tiles/individual');
 mkdir(OUTDIR + '/tiles/greyscale');
 mkdir(OUTDIR + '/tiles/greyscale/individual');
 mkdir(OUTDIR + '/tiles/lookup');
@@ -378,7 +377,7 @@ for (let ii = 0; ii < PALETTE.length; ++ii) {
 for (let ii = 0; ii < pal.width; ++ii) {
   pal.data[ii*4+3] = 255;
 }
-fs.writeFileSync(`${OUTDIR}/tiles/lookup/palette.png`, pngWrite(pal));
+fs.writeFileSync(`${OUTDIR}/tiles/palette.png`, pngWrite(pal));
 
 let mapping = [];
 for (let ii = 0; ii < atlas_ids.length; ++ii) {
@@ -392,3 +391,6 @@ fs.readdirSync(`${ASSETDIR}/fonts`)
   .forEach((filename) => {
     fs.cpSync(`${ASSETDIR}/fonts/${filename}`, `${OUTDIR}/fonts/${filename}`);
   });
+
+fs.cpSync(`${ASSETDIR}/../LICENSE`, `${OUTDIR}/LICENSE`);
+fs.cpSync(`${OUTDIR}/../README.md`, `${OUTDIR}/README.md`);

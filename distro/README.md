@@ -1,0 +1,16 @@
+Dungeon Crawler Limited Jam Asset Pack
+======================================
+
+# fonts/
+Recommended retro fonts
+
+# tiles/
+Graphical assets (these must be used)
+* `tiles/individual/` - each tile as a single file
+* `tiles/atlas.png` - all tiles combined into one atlas
+* `tiles/atlasmap.txt` - an ordered list of individual names for what is in `atlas.png`
+* `tiles/palette.png` - the _original_ palette used to author these tiles (NOTE: you are free to remap any and all tiles to any palette, in an image editor or at run-time)
+* `tiles/greyscale` - a copy of the above in greyscale, for easy tinting
+* `tiles/lookup` - a copy of the above where the red channel contains the palette index, for easy use in shaders (e.g. use the R value as texture coordinates to look up a color from another static or dynamic palette texture)
+
+# audio/
