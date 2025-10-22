@@ -7,16 +7,28 @@ const { abs, floor, round, max } = Math;
 
 const OUTDIR = __dirname + '/../out';
 
-function mkdir(dir) {
-  if (!fs.existsSync(dir)) {
-    fs.mkdirSync(dir);
-  }
-}
+const REMAPPING1 = {
+  'Rykhath-Tiles Donation': 'tiles',
+  'IDK tiles': 'tiles2',
+  'floortiles_and_stuff': 'tiles',
+  'crystalwarriors-sheet': 'crystalwarriors',
+  'rock-monsters': 'monsters2',
+};
 
 function remapper(key, tilex, tiley) {
   if (key === 'davidyork/monsters') {
     let monidx = tilex % 4;
     let frameidx = floor(tilex / 4);
+    return [monidx * 4 + frameidx, tiley];
+  }
+  if (key === 'davidyork/crystalwarriors') {
+    let monidx = tilex % 4;
+    let frameidx = floor(tilex / 4);
+    return [monidx * 2 + frameidx, tiley];
+  }
+  if (key === 'davidyork/monsters2') {
+    let monidx = tilex % 8;
+    let frameidx = floor(tilex / 8);
     return [monidx * 4 + frameidx, tiley];
   }
   return [tilex, tiley];
@@ -151,11 +163,11 @@ function hexcolor(r, g, b, a) {
   return ('000000' + (r << 16 | g << 8 | b).toString(16)).slice(-6);
 }
 
-const REMAPPING1 = {
-  'Rykhath-Tiles Donation': 'tiles',
-  'IDK tiles': 'tiles2',
-  'floortiles_and_stuff': 'tiles',
-};
+function mkdir(dir) {
+  if (!fs.existsSync(dir)) {
+    fs.mkdirSync(dir);
+  }
+}
 
 mkdir(OUTDIR);
 mkdir(OUTDIR + '/tiles');
