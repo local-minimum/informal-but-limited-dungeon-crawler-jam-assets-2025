@@ -169,10 +169,10 @@ function writePNGs(filename, img) {
   fs.writeFileSync(filename.replace('/color/', '/lookup/'), outbuf);
   outbuf = pngWrite(x8);
   if (filename.endsWith('atlas.png')) {
-    fs.writeFileSync(filename.replace('/color/', '/').replace('atlas.png', 'atlas-x8.png'), outbuf);
+    fs.writeFileSync(filename.replace('/color/', '/').replace('atlas.png', 'atlas-8x.png'), outbuf);
   } else {
     assert(filename.includes('/individual/'));
-    fs.writeFileSync(filename.replace('/color/', '/').replace('/individual/', '/individual-x8/'), outbuf);
+    fs.writeFileSync(filename.replace('/color/', '/').replace('/individual/', '/individual-8x/'), outbuf);
   }
 }
 
@@ -189,7 +189,7 @@ function mkdir(dir) {
 mkdir(OUTDIR);
 mkdir(OUTDIR + '/tiles');
 mkdir(OUTDIR + '/tiles/individual');
-mkdir(OUTDIR + '/tiles/individual-x8');
+mkdir(OUTDIR + '/tiles/individual-8x');
 mkdir(OUTDIR + '/tiles/greyscale');
 mkdir(OUTDIR + '/tiles/greyscale/individual');
 mkdir(OUTDIR + '/tiles/lookup');
