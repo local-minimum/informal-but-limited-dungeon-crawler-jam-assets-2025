@@ -191,6 +191,7 @@ let users = fs.readdirSync(TILEDIR);
 let atlas_ids = [];
 
 let seen_keys = {};
+let seen_imgnames = {};
 
 users.forEach(function (username) {
   let files = fs.readdirSync(TILEDIR + username);
@@ -297,6 +298,12 @@ users.forEach(function (username) {
       }
     }
 
+    let jsondata;
+
+    if (fs.existsSync(TILEDIR + sourcename.replace('.png', '.json'))) {
+      jsondata = JSON.parse(fs.readFileSync(TILEDIR + sourcename.replace('.png', '.json'), 'utf8')).frames;
+    }
+
     // output individual tiles
     let count = 0;
     tiles_out.sort((a, b) => {
@@ -309,12 +316,21 @@ users.forEach(function (username) {
     });
     let outidx = 0;
     tiles_out.forEach(function (pair) {
+      let [tilex, tiley] = pair.src;
       // let [desttilex, desttiley] = pair.dest;
       // let outpath = `${OUTDIR}/tiles/color/individual/${imgkey}-${desttiley * tilew + desttilex}.png`;
       let name = `${imgkey}-${outidx++}`;
+      for (let key2 in jsondata) {
+        let elem = jsondata[key2];
+        if (elem.frame.x === tilex * DIM && elem.frame.y === tiley * DIM) {
+          name = key2.toLowerCase();
+          break;
+        }
+      }
       let outpath = `${OUTDIR}/tiles/color/individual/${name}.png`;
+      assert(!seen_imgnames[name]);
+      seen_imgnames[name] = true;
       pair.name = name;
-      let [tilex, tiley] = pair.src;
       for (let yy = 0, out=0; yy < DIM; ++yy) {
         let yyy = tiley * DIM + yy;
         for (let xx = 0; xx < DIM; ++xx) {
