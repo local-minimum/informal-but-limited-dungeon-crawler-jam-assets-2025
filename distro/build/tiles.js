@@ -126,6 +126,7 @@ function writePNGs(filename, img) {
 
   let greyscale = pngAlloc({ width: img.width, height: img.height, byte_depth: 4 });
   let lookup = pngAlloc({ width: img.width, height: img.height, byte_depth: 4 });
+  let x8 = pngAlloc({ width: img.width * 8, height: img.height * 8, byte_depth: 4 });
   for (let ii = 0; ii < greyscale.data.length; ii+=4) {
     let r = img.data[ii];
     let g = img.data[ii+1];
@@ -151,12 +152,28 @@ function writePNGs(filename, img) {
     lookup.data[ii+1] = lug;
     lookup.data[ii+2] = lub;
     lookup.data[ii+3] = a;
+    let xxx = ii/4 % img.width;
+    let yyy = (ii/4 - xxx) / img.width;
+    for (let yy = 0; yy < 8; ++yy) {
+      for (let xx = 0; xx < 8; ++xx) {
+        x8.data[((yyy * 8 + yy) * img.width * 8 + xxx * 8 + xx) * 4] = r;
+        x8.data[((yyy * 8 + yy) * img.width * 8 + xxx * 8 + xx) * 4 + 1] = g;
+        x8.data[((yyy * 8 + yy) * img.width * 8 + xxx * 8 + xx) * 4 + 2] = b;
+        x8.data[((yyy * 8 + yy) * img.width * 8 + xxx * 8 + xx) * 4 + 3] = a;
+      }
+    }
   }
   outbuf = pngWrite(greyscale);
   fs.writeFileSync(filename.replace('/color/', '/greyscale/'), outbuf);
   outbuf = pngWrite(lookup);
   fs.writeFileSync(filename.replace('/color/', '/lookup/'), outbuf);
-
+  outbuf = pngWrite(x8);
+  if (filename.endsWith('atlas.png')) {
+    fs.writeFileSync(filename.replace('/color/', '/').replace('atlas.png', 'atlas-x8.png'), outbuf);
+  } else {
+    assert(filename.includes('/individual/'));
+    fs.writeFileSync(filename.replace('/color/', '/').replace('/individual/', '/individual-x8/'), outbuf);
+  }
 }
 
 function hexcolor(r, g, b, a) {
@@ -172,6 +189,7 @@ function mkdir(dir) {
 mkdir(OUTDIR);
 mkdir(OUTDIR + '/tiles');
 mkdir(OUTDIR + '/tiles/individual');
+mkdir(OUTDIR + '/tiles/individual-x8');
 mkdir(OUTDIR + '/tiles/greyscale');
 mkdir(OUTDIR + '/tiles/greyscale/individual');
 mkdir(OUTDIR + '/tiles/lookup');
