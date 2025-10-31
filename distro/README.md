@@ -20,9 +20,17 @@ Graphical assets (these must be used, please see Jam rules for details)
 Credits (contributors compiled here for reference)
 ==================================================
 Jimb Esser (Jimbly) - https://github.com/Jimbly
+
 Alexander Polyakov - https://github.com/AlexanderPolyakov
+
 David York - https://github.com/DavidYork
+
 Martin Zackrisson (Local Minimum) - https://github.com/local-minimum
+
 Kyle (Rocktavious) - https://github.com/rocktavious
+
 AnalyticalGoose - https://github.com/AnalyticalGoose
+
 CieloForge - https://github.com/CieloForge
+
+Captain Coder - https://github.com/jcollard
