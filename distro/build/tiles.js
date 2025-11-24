@@ -7,6 +7,8 @@ const { abs, floor, round, max } = Math;
 
 const OUTDIR = __dirname + '/../out';
 
+const DO_LOOKUP = false;
+
 const REMAPPING1 = {
   'Rykhath-Tiles Donation': 'tiles',
   'IDK tiles': 'tiles2',
@@ -165,8 +167,10 @@ function writePNGs(filename, img) {
   }
   outbuf = pngWrite(greyscale);
   fs.writeFileSync(filename.replace('/color/', '/greyscale/'), outbuf);
-  outbuf = pngWrite(lookup);
-  fs.writeFileSync(filename.replace('/color/', '/lookup/'), outbuf);
+  if (DO_LOOKUP) {
+    outbuf = pngWrite(lookup);
+    fs.writeFileSync(filename.replace('/color/', '/lookup/'), outbuf);
+  }
   outbuf = pngWrite(x8);
   if (filename.endsWith('atlas.png')) {
     fs.writeFileSync(filename.replace('/color/', '/').replace('atlas.png', 'atlas-8x.png'), outbuf);
@@ -192,8 +196,10 @@ mkdir(OUTDIR + '/tiles/individual');
 mkdir(OUTDIR + '/tiles/individual-8x');
 mkdir(OUTDIR + '/tiles/greyscale');
 mkdir(OUTDIR + '/tiles/greyscale/individual');
-mkdir(OUTDIR + '/tiles/lookup');
-mkdir(OUTDIR + '/tiles/lookup/individual');
+if (DO_LOOKUP) {
+  mkdir(OUTDIR + '/tiles/lookup');
+  mkdir(OUTDIR + '/tiles/lookup/individual');
+}
 mkdir(OUTDIR + '/fonts');
 let onepng = pngAlloc({ width: DIM, height: DIM, byte_depth: 4 });
 
